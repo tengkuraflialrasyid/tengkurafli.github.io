@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+  - export DEPLOYPATH=/home/tengkura/public_html
+  - /bin/cp index.html $DEPLOYPATH
+  - /bin/cp -R css $DEPLOYPATH
+  - /bin/cp -R img $DEPLOYPATH
+  - /bin/cp -R js $DEPLOYPATH
