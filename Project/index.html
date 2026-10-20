@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jurusan Teknik Komputer dan Informatika - Politeknik Negeri Medan</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home" data-bs-spy="scroll">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+        <div class="container-xl">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <span>
+                    <img src="img/logo-polmed.png" alt="Logo Politeknik Negeri Medan" class="polmed">
+                </span>
+                <span>
+                    <span class="brand-title d-block">POLITEKNIK NEGERI MEDAN</span>
+                    <span class="brand-sub d-block">Jurusan Teknik Komputer dan Informatika</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prodi">Program Studi</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Akademik</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#kurikulum">Kalender Akademik</a></li>
+                            <li><a class="dropdown-item" href="#panduan">Panduan Akademik</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Penelitian</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#publikasi">Publikasi</a></li>
+                            <li><a class="dropdown-item" href="#roadmap">Roadmap Riset</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pengabdian</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#kegiatan">Kegiatan</a></li>
+                            <li><a class="dropdown-item" href="#mitra">Mitra</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                     <button type="button" class="btn btn-link text-white p-0 btn-cari" aria-label="Cari" title="Cari (tekan /)" data-bs-toggle="modal" data-bs-target="#modalCari">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <a href="#" class="btn btn-primary btn-sm fw-semibold px-3"><i class="bi bi-mortarboard-fill me-1"></i> Sistem Akademik</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- hero -->
+    <header class="hero d-flex align-items-center">
+        <div class="building">
+            <img src="img/dosen.png" alt="Mahasiswa Teknik Komputer dan Informatika">
+        </div>
+        <div class="container-xl py-5 position-relative">
+            <div class="col-lg-6">
+                <h1>Teknik Komputer<br> dan <span>Informatika</span></h1>
+                <div class="fw-bold fs-6 mb-2">Politeknik Negeri Medan</div>
+                <p class="tagline">Membentuk talenta digital yang kompeten, inovatif, dan siap menghadapi tantangan industri 4.0.</p>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                    <a href="https://youtu.be/Kpohz7yl940?si=J-sbIsxq9rZ0oTTL" target="_blank" class="btn btn-outline-light btn-hover-red rounded-pill fw-semibold px-3"><i class="bi bi-play-circle-fill me-1"></i>Profil Jurusan</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8064A2" fill-opacity="1" d="M0,192L18.5,165.3C36.9,139,74,85,111,74.7C147.7,64,185,96,222,138.7C258.5,181,295,235,332,250.7C369.2,267,406,245,443,208C480,171,517,117,554,90.7C590.8,64,628,64,665,64C701.5,64,738,64,775,53.3C812.3,43,849,21,886,53.3C923.1,85,960,171,997,192C1033.8,213,1071,171,1108,138.7C1144.6,107,1182,85,1218,80C1255.4,75,1292,85,1329,96C1366.2,107,1403,117,1422,122.7L1440,128L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path></svg>
+    <!-- akhir hero -->
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="tentang">
+        <div class="container-xl">
+            <div class="row text-center mb-3">
+                <h2>Tentang Kami</h2>
+            </div>
+            <div class="row align-items-center g-5">
+
+                <!-- Visual -->
+                <div class="col-lg-5">
+                    <div class="tentang-visual">
+                        <img src="img/mahasiswa-teknik-komputer (2).jpg" alt="Gedung Politeknik Negeri Medan" class="img-fluid rounded-4 shadow" loading="lazy">
+                        <div class="tentang-badge">
+                            <i class="bi bi-mortarboard-fill"></i>
+                            <div>
+                                <strong>Pendidikan Vokasi</strong>
+                                <span>Memperbanyak Praktik</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Konten -->
+                <div class="col-lg-7">
+                    <h3 class="tentang-title">Teknik <span>Komputer</span></h3>
+                    <p class="tentang-lead">
+                        Jurusan Teknik Komputer dan Informatika Politeknik Negeri Medan membentuk lulusan
+                        yang terampil lewat perpaduan kuliah, praktikum, dan proyek nyata.
+                    </p>
+                    <p class="tentang-text">
+                        Mahasiswa mempelajari perangkat keras, jaringan, pemrograman, hingga desain multimedia,
+                        dengan pendampingan dosen dan fasilitas laboratorium yang mendukung.
+                    </p>
+
+                    <div class="row g-3 mt-2">
+                        <div class="col-sm-6">
+                            <div class="tentang-card">
+                                <span class="tentang-icon"><i class="bi bi-cpu"></i></span>
+                                <div>
+                                    <h3>Praktik di Laboratorium</h3>
+                                    <p>Perakitan, jaringan, dan pemrograman dipelajari langsung dengan peralatan nyata.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="tentang-card">
+                                <span class="tentang-icon"><i class="bi bi-code-slash"></i></span>
+                                <div>
+                                    <h3>Proyek &amp; Kompetisi</h3>
+                                    <p>Mahasiswa dilatih membangun aplikasi dan ikut lomba untuk mengasah kemampuan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="tentang-card">
+                                <span class="tentang-icon"><i class="bi bi-award"></i></span>
+                                <div>
+                                    <h3>Sertifikasi Kompetensi</h3>
+                                    <p>Dukungan uji kompetensi agar kemampuan lulusan diakui secara profesional.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="tentang-card">
+                                <span class="tentang-icon"><i class="bi bi-rocket-takeoff"></i></span>
+                                <div>
+                                    <h3>Siap Berkarier</h3>
+                                    <p>Kurikulum disusun dekat dengan kebutuhan industri teknologi informasi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <a href="#prodi" class="btn btn-tentang fw-semibold px-4">Lihat Program Studi <i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- akhir tentang -->
+
+     <!-- prodi -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8064A2" fill-opacity="1" d="M0,192L18.5,165.3C36.9,139,74,85,111,74.7C147.7,64,185,96,222,138.7C258.5,181,295,235,332,250.7C369.2,267,406,245,443,208C480,171,517,117,554,90.7C590.8,64,628,64,665,64C701.5,64,738,64,775,53.3C812.3,43,849,21,886,53.3C923.1,85,960,171,997,192C1033.8,213,1071,171,1108,138.7C1144.6,107,1182,85,1218,80C1255.4,75,1292,85,1329,96C1366.2,107,1403,117,1422,122.7L1440,128L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path></svg>
+    <section id="prodi" class="prodi">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2>Program Studi</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-4 me-4">
+                    <div class="card">
+                        <img src="img/mahasiswa-crimping.jpg" alt="sertifikat IoT" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="CE text-center">Teknik Komputer</h5>
+                            <p class="card-text">Mempelajari perancangan, instalasi, konfigurasi,
+                                dan pemeliharaan perangkat keras komputer,
+                                jaringan komputer, serta sistem berbasis Internet of Things (IoT).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 mb-4">
+                    <div class="card">
+                        <img src="img/mahasiswa-ngoding.jpg" alt="sertifikat mtcna" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="TRPL text-center">Teknik Rekayasa Perangkat Lunak</h5>
+                            <p class="card-text">Mempelajari analisis kebutuhan, perancangan,
+                                pengembangan, pengujian, dan pemeliharaan
+                                perangkat lunak serta aplikasi berbasis web dan mobile.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 mb-4 me-4">
+                    <div class="card">
+                        <img src="img/multimedia-grafis.jpg" alt="sertifikat JNA VSGA" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="Multimedia text-center">Teknik Multimedia Grafis</h5>
+                            <p class="card-text">Mempelajari desain grafis, pengolahan gambar digital,
+                                ilustrasi, animasi, serta pengembangan konten visual
+                                dan multimedia yang kreatif dan komunikatif.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 mb-3">
+                    <div class="card">
+                        <img src="img/manajemen-informatika.jpg" alt="sertifikat JNA BNSP" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="JNA BNSP">Manajemen Informatika</h5>
+                            <p class="card-text">Mempelajari pengelolaan sistem informasi,
+                                perancangan dan pengembangan basis data,
+                                pemrograman aplikasi, serta penerapan teknologi
+                                informasi untuk mendukung kebutuhan organisasi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,128L24,154.7C48,181,96,235,144,224C192,213,240,139,288,138.7C336,139,384,213,432,224C480,235,528,181,576,165.3C624,149,672,171,720,160C768,149,816,107,864,85.3C912,64,960,64,1008,69.3C1056,75,1104,85,1152,122.7C1200,160,1248,224,1296,218.7C1344,213,1392,139,1416,101.3L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+    </section>
+    <!-- akhir prodi -->
+
+    <!-- Akademik -->
+    <section id="kurikulum" class="kurikulum">
+        <div class="container-xl py-4">
+            <!-- JUDUL -->
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2>Akademik</h2>
+                </div>
+            </div>
+            <!-- ISI AKADEMIK -->
+            <div class="row g-4 justify-content-center">
+                <!-- KALENDER AKADEMIK -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 p-lg-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="akademik-icon me-3">
+                                    <i class="bi bi-calendar3 fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-1"> Kalender Akademik</h4>
+                                    <small class="text-white">Jadwal kegiatan akademik</small>
+                                </div>
+                            </div>
+                            <p class="text-white">
+                                Informasi mengenai jadwal perkuliahan, 
+                                <br>masa ujian, dan libur akademik.
+                            </p>
+                            <a href="https://drive.google.com/file/d/1MiwO-zBT3vDh4GrpVBTYc7j5IFRHUSeq/view?usp=drivesdk" target="_blank" class="btn btn-akademik rounded-pill fw-semibold px-4" rel="noopener noreferrer">Lihat Kalender
+                                <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Panduan Akademik -->
+                <div class="col-md-6" id="panduan">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 p-lg-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="akademik-icon me-3">
+                                    <i class="bi bi-journal-text fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-1">Panduan Akademik</h4>
+                                    <small class="text-white">Struktur pembelajaran</small>
+                                </div>
+                            </div>
+                            <p class="text-white">Panduan dan ketentuan<br>akademik mahasiswa.</p>
+                            <a href="https://share.google/SGmMssGOsm2CoylMy" target="_blank" class="btn btn-akademik rounded-pill fw-semibold px-4" rel="noopener noreferrer">Lihat Panduan
+                                <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir akademik -->
+
+    <!-- Penelitian -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8064a2" fill-opacity="1" d="M0,224L40,234.7C80,245,160,267,240,229.3C320,192,400,96,480,85.3C560,75,640,149,720,170.7C800,192,880,160,960,133.3C1040,107,1120,85,1200,96C1280,107,1360,149,1400,170.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    <section id="penelitian" class="penelitian mt-5">
+        <div class="container-xl">
+            <div class="row g-5 align-items-center">
+                <!-- Pengantar -->
+                <div class="col-lg-5">
+                    <span class="penelitian-eyebrow tex">Penelitian</span>
+                    <h2 class="penelitian-title">Riset untuk <span>solusi digital</span> yang bermanfaat</h2>
+                    <p class="penelitian-lead">
+                        Penelitian di jurusan diarahkan pada teknologi terapan yang menjawab kebutuhan industri
+                        dan masyarakat, dengan melibatkan dosen maupun mahasiswa.
+                    </p>
+                    <ul class="penelitian-points">
+                        <li><i class="bi bi-check-circle-fill"></i> Berorientasi terapan dan kebutuhan industri</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Kolaborasi dosen dan mahasiswa</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Hasil riset dipublikasikan dan dimanfaatkan</li>
+                    </ul>
+                </div>
+
+                <!-- Bidang riset -->
+                <div class="col-lg-7">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="riset-card">
+                                <span class="riset-icon"><i class="bi bi-cpu"></i></span>
+                                <h3>Internet of Things</h3>
+                                <p>Sistem tertanam, sensor, dan otomasi untuk kebutuhan nyata.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="riset-card">
+                                <span class="riset-icon"><i class="bi bi-shield-lock"></i></span>
+                                <h3>Jaringan &amp; Keamanan Siber</h3>
+                                <p>Infrastruktur jaringan yang andal serta perlindungan data dan sistem.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="riset-card">
+                                <span class="riset-icon"><i class="bi bi-code-slash"></i></span>
+                                <h3>Rekayasa Perangkat Lunak</h3>
+                                <p>Aplikasi web dan mobile dengan proses pengembangan yang terukur.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="riset-card">
+                                <span class="riset-icon"><i class="bi bi-palette"></i></span>
+                                <h3>Multimedia &amp; Desain</h3>
+                                <p>Media interaktif, animasi, dan pengalaman pengguna yang menarik.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="riset-card">
+                                <span class="riset-icon"><i class="bi bi-database"></i></span>
+                                <h3>Sistem Informasi &amp; Data</h3>
+                                <p>Pengelolaan dan analisis data untuk mendukung pengambilan keputusan.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="riset-card">
+                                <span class="riset-icon"><i class="bi bi-robot"></i></span>
+                                <h3>Kecerdasan Buatan</h3>
+                                <p>Pemanfaatan pembelajaran mesin pada berbagai bidang terapan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publikasi -->
+            <div id="publikasi" class="penelitian-block">
+                <div class="penelitian-block-head text-center">
+                    <h2>Publikasi</h2>
+                    <p>Telusuri karya ilmiah dosen dan mahasiswa melalui portal berikut.</p>
+                </div>
+                <div class="row g-3">
+                    <!-- GANTI href di bawah dengan link profil jurusan -->
+                    <div class="col-md-4">
+                        <a href="https://share.google/rV0SeoKXIzbTD9FFX" target="_blank" class="pub-card">
+                            <span class="pub-icon"><i class="bi bi-graph-up-arrow"></i></span>
+                            <h4>SINTA</h4>
+                            <p>Profil, skor, dan rekam jejak publikasi peneliti.</p>
+                            <span class="pub-link">Kunjungi <i class="bi bi-box-arrow-up-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://scholar.google.com/citations?user=enAasB8AAAAJ&hl=en" target="_blank" class="pub-card">
+                            <span class="pub-icon"><i class="bi bi-mortarboard"></i></span>
+                            <h4>Google Scholar</h4>
+                            <p>Artikel dan sitasi karya ilmiah yang telah terbit.</p>
+                            <span class="pub-link">Kunjungi <i class="bi bi-box-arrow-up-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://garuda.kemdiktisaintek.go.id/publisher/view/88" target="_blank" class="pub-card">
+                            <span class="pub-icon"><i class="bi bi-journal-richtext"></i></span>
+                            <h4>Portal Garuda</h4>
+                            <p>Jurnal dan prosiding ilmiah dari berbagai institusi.</p>
+                            <span class="pub-link">Kunjungi <i class="bi bi-box-arrow-up-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Roadmap -->
+            <div id="roadmap" class="penelitian-block">
+                <div class="penelitian-block-head text-center">
+                    <h2>Roadmap Riset</h2>
+                    <p>Arah pengembangan penelitian jurusan secara bertahap.</p>
+                </div>
+                <div class="roadmap">
+                    <div class="roadmap-step">
+                        <span class="roadmap-num">1</span>
+                        <h4>Penguatan Fondasi</h4>
+                        <p>Membentuk kelompok riset, memetakan bidang unggulan, dan membiasakan budaya publikasi.</p>
+                    </div>
+                    <div class="roadmap-step">
+                        <span class="roadmap-num">2</span>
+                        <h4>Pengembangan &amp; Implementasi</h4>
+                        <p>Membangun prototipe dan produk teknologi bersama industri serta mitra.</p>
+                    </div>
+                    <div class="roadmap-step">
+                        <span class="roadmap-num">3</span>
+                        <h4>Hilirisasi &amp; Dampak</h4>
+                        <p>Mendorong hak kekayaan intelektual dan penerapan hasil riset di masyarakat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8064a2" fill-opacity="1" d="M0,64L40,74.7C80,85,160,107,240,138.7C320,171,400,213,480,218.7C560,224,640,192,720,160C800,128,880,96,960,74.7C1040,53,1120,43,1200,53.3C1280,64,1360,96,1400,112L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+    <!-- Akhir Penelitian -->
+
+    <!-- Pengabdian -->
+    <section id="pengabdian" class="pengabdian">
+        <div class="container-xl">
+            <!-- Kegiatan -->
+            <div id="kegiatan" class="pengabdian-block">
+                <div class="pengabdian-block-head text-center">
+                    <h2>Kegiatan</h2>
+                    <p>Pelatihan, lomba, dan kunjungan yang diselenggarakan bersama mahasiswa.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <article class="kegiatan-card kegiatan-poster">
+                            <div class="kegiatan-img">
+                                <img src="img/kegiatan-ce-course.jpg" alt="Poster HMPS CE Course Basic Fundamental of Artificial Intelligence" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-mortarboard"></i> Kursus</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <span class="kegiatan-meta"><i class="bi bi-calendar3"></i> Sep 2026</span>
+                                <h3>HMPS CE Course: Dasar AI</h3>
+                                <p>Kelas gratis via Google Meet tentang dasar-dasar kecerdasan buatan, dengan e-sertifikat.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <article class="kegiatan-card kegiatan-poster">
+                            <div class="kegiatan-img">
+                                <img src="img/kegiatan-ekskursi.jpg" alt="Mahasiswa studi ekskursi di Bank Indonesia Provinsi Sumatera Barat" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-geo-alt"></i> Kunjungan</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <span class="kegiatan-meta"><i class="bi bi-calendar3"></i> Jun – Jul 2026</span>
+                                <h3>Studi Ekskursi Teknik Komputer 2026</h3>
+                                <p>Kunjungan mahasiswa ke perusahaan dan instansi, termasuk Bank Indonesia Provinsi Sumatera Barat.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <article class="kegiatan-card kegiatan-poster">
+                            <div class="kegiatan-img">
+                                <img src="img/kegiatan-ki-cup.jpg" alt="Dokumentasi KI Cup" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-trophy"></i> Lomba</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <h3>KI Cup</h3>
+                                <p>Kompetisi dua hari yang menumbuhkan semangat, kerja sama, dan sportivitas mahasiswa.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <article class="kegiatan-card kegiatan-poster">
+                            <div class="kegiatan-img">
+                                <img src="img/kegiatan-dts.jpg" alt="Pelatihan Digital Talent Scholarship di Politeknik Negeri Medan" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-megaphone"></i> Pelatihan</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <span class="kegiatan-meta"><i class="bi bi-calendar3"></i> Des 2025</span>
+                                <h3>Digital Talent Scholarship</h3>
+                                <p>Pelatihan yang membekali mahasiswa keterampilan digital dan akses ke ekonomi kreatif.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <article class="kegiatan-card kegiatan-poster">
+                            <div class="kegiatan-img">
+                                <img src="img/kegiatan-fast-fingers.jpg" alt="Poster 10 Fast Fingers Competition" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-trophy"></i> Lomba</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <span class="kegiatan-meta"><i class="bi bi-calendar3"></i> Mei 2025</span>
+                                <h3>10 Fast Fingers Competition</h3>
+                                <p>Lomba mengetik cepat bertema “Menguasai Keyboard, Menguasai Karier”, terbuka untuk umum.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <article class="kegiatan-card kegiatan-poster">
+                            <div class="kegiatan-img">
+                                <img src="img/kegiatan-mtcna.jpg" alt="Poster pelatihan MikroTik MTCNA" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-patch-check"></i> Sertifikasi</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <span class="kegiatan-meta"><i class="bi bi-calendar3"></i> Nov 2024</span>
+                                <h3>Pelatihan MikroTik MTCNA</h3>
+                                <p>Persiapan sertifikasi MikroTik Certified Network Associate dengan materi jaringan lengkap.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mitra -->
+            <div id="mitra" class="pengabdian-block">
+                <div class="pengabdian-block-head text-center">
+                    <h2>Mitra</h2>
+                    <p>Kolaborasi bersama industri, pemerintah, dan mitra internasional.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <article class="kegiatan-card mitra-card">
+                            <div class="kegiatan-img">
+                                <img src="img/mitra-jepang.jpg" alt="Pertemuan dengan perusahaan Jepang" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-calendar3"></i> Jan 2026</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <h3>Perusahaan Jepang</h3>
+                                <p>Kunjungan untuk membahas peluang kerja dan magang internasional.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <article class="kegiatan-card mitra-card">
+                            <div class="kegiatan-img">
+                                <img src="img/mitra-china.jpg" alt="Sosialisasi dan pameran mitra industri China–Indonesia" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-calendar3"></i> Okt 2025</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <h3>Industri China–Indonesia</h3>
+                                <p>Sosialisasi dan pameran mitra industri bersama Cultural Educational Exchange Association.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <article class="kegiatan-card mitra-card">
+                            <div class="kegiatan-img">
+                                <img src="img/mitra-gubsu.jpg" alt="Audiensi ke Kantor Gubernur Sumatera Utara" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-calendar3"></i> Agu 2025</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <h3>Pemerintah Provinsi Sumut</h3>
+                                <p>Audiensi ke Kantor Gubsu membahas kolaborasi riset dan program strategis.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <article class="kegiatan-card mitra-card">
+                            <div class="kegiatan-img">
+                                <img src="img/mitra-victorindo.jpg" alt="Penandatanganan kerja sama dengan PT Victorindo" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-calendar3"></i> Mei 2025</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <h3>PT Victorindo</h3>
+                                <p>Kerja sama beasiswa dan peluang industri bagi mahasiswa.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <article class="kegiatan-card mitra-card">
+                            <div class="kegiatan-img">
+                                <img src="img/mitra-batam.jpg" alt="Forum group discussion dengan industri di Batam" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-calendar3"></i> Mei 2025</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <h3>Industri di Batam</h3>
+                                <p>Kerja sama dengan perusahaan di Batam, alumni ikut memperkuat jaringan industri.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <article class="kegiatan-card mitra-card">
+                            <div class="kegiatan-img">
+                                <img src="img/mitra-intact.jpg" alt="MoU signing ceremony Taiwan–Indonesia" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-calendar3"></i> Nov 2024</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <h3>INTACT Base Taiwan–Indonesia</h3>
+                                <p>Bergabung dalam program kerja sama internasional Taiwan–Indonesia.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <article class="kegiatan-card mitra-card">
+                            <div class="kegiatan-img">
+                                <img src="img/mitra-aphri.jpg" alt="Kerja sama dengan APHRI dan PT Mitra Sinergi Sukses" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-calendar3"></i> Mar 2024</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <h3>APHRI & PT Mitra Sinergi Sukses</h3>
+                                <p>Kerja sama untuk memperluas peluang magang dan karier mahasiswa.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <article class="kegiatan-card mitra-card">
+                            <div class="kegiatan-img">
+                                <img src="img/mitra-markija.jpg" alt="Kunjungan Markija ke bengkel kampus" loading="lazy">
+                                <span class="kegiatan-tag"><i class="bi bi-calendar3"></i> Mei 2023</span>
+                            </div>
+                            <div class="kegiatan-body">
+                                <h3>Markija</h3>
+                                <p>Kolaborasi seleksi magang mahasiswa di Eropa.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Akhir Pengabdian -->
+
+    <!-- berita -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8064a2" fill-opacity="1" d="M0,96L40,128C80,160,160,224,240,213.3C320,203,400,117,480,90.7C560,64,640,96,720,117.3C800,139,880,149,960,133.3C1040,117,1120,75,1200,64C1280,53,1360,75,1400,85.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+
+    <section id="berita" class="berita">
+        <div class="container-xl">
+            <div class="berita-head text-center">
+                <h2>Berita</h2>
+                <p>Kabar terbaru prestasi, kegiatan, dan informasi dari jurusan.</p>
+            </div>
+
+            <div class="berita-wrap">
+                <button type="button" class="berita-btn" id="beritaPrev" aria-label="Geser berita ke kiri"><i class="bi bi-chevron-left"></i></button>
+                <div class="berita-rows" role="region" aria-label="Daftar berita">
+                    <!-- Baris atas: geser ke kanan tiap 2 detik -->
+                    <div class="berita-track" data-dir="1" data-delay="2000" tabindex="0" aria-label="Berita baris atas">
+                        <article class="berita-card">
+                            <div class="berita-img">
+                                <img src="img/berita-kmipn.jpg" alt="Mahasiswa Polmed bersama pimpinan membawa sertifikat prestasi KMIPN 2026" loading="lazy">
+                                <span class="berita-tag"><i class="bi bi-trophy"></i> Prestasi</span>
+                            </div>
+                            <div class="berita-body">
+                                <span class="berita-meta"><i class="bi bi-calendar3"></i> 17 Sep 2026</span>
+                                <h3>Mahasiswa Polmed Raih Tiga Prestasi Nasional di KMIPN 2026</h3>
+                                <p>Juara 1 Divisi Animasi, Juara 2 Keamanan Siber, dan Juara 3 Pengembangan Aplikasi Permainan.</p>
+                            </div>
+                        </article>
+                        <article class="berita-card">
+                            <div class="berita-img">
+                                <img src="img/berita-popa.jpg" alt="Sertifikat POPA 2026 peringkat 3 Outstanding Department" loading="lazy">
+                                <span class="berita-tag"><i class="bi bi-trophy"></i> Prestasi</span>
+                            </div>
+                            <div class="berita-body">
+                                <span class="berita-meta"><i class="bi bi-calendar3"></i> 22 Mei 2026</span>
+                                <h3>Jurusan TKI Raih Peringkat 3 Terbaik pada POPA 2026</h3>
+                                <p>Penghargaan Polmed Outstanding Performance Awards untuk kategori Outstanding Department.</p>
+                            </div>
+                        </article>
+                        <article class="berita-card">
+                            <div class="berita-img">
+                                <img src="img/berita-kapolda.jpg" alt="Poster CE Bangga juara 3 dan top score Kapolda Cup 2025" loading="lazy">
+                                <span class="berita-tag"><i class="bi bi-trophy"></i> Prestasi</span>
+                            </div>
+                            <div class="berita-body">
+                                <span class="berita-meta"><i class="bi bi-calendar3"></i> 14 Nov 2025</span>
+                                <h3>Juara 3 dan Top Score Kapolda Cup 2025</h3>
+                                <p>Aditya Aramico mengharumkan nama jurusan di ajang bola basket Kapolda Cup 2025.</p>
+                            </div>
+                        </article>
+                        <article class="berita-card">
+                            <div class="berita-img">
+                                <img src="img/berita-wisuda.jpg" alt="Poster selamat wisuda mahasiswa angkatan 22 Teknik Komputer" loading="lazy">
+                                <span class="berita-tag"><i class="bi bi-mortarboard"></i> Akademik</span>
+                            </div>
+                            <div class="berita-body">
+                                <h3>Selamat Wisuda Mahasiswa/i 22</h3>
+                                <p>Momen kebahagiaan wisuda mahasiswa/i angkatan 22 Teknik Komputer.</p>
+                            </div>
+                        </article>
+                        <article class="berita-card">
+                            <div class="berita-img">
+                                <img src="img/berita-jumat-berbagi.jpg" alt="Mahasiswa bersama warga korban banjir pada kegiatan Jumat Indah Berbagi" loading="lazy">
+                                <span class="berita-tag"><i class="bi bi-heart"></i> Sosial</span>
+                            </div>
+                            <div class="berita-body">
+                                <h3>Jumat Indah Berbagi</h3>
+                                <p>Penyaluran donasi dan kepedulian bagi korban banjir bersama HMPS CE.</p>
+                            </div>
+                        </article>
+                        <article class="berita-card">
+                            <div class="berita-img">
+                                <img src="img/berita-pengajian.jpg" alt="Dokumentasi pengajian akbar CE 2024" loading="lazy">
+                                <span class="berita-tag"><i class="bi bi-people"></i> Organisasi</span>
+                            </div>
+                            <div class="berita-body">
+                                <span class="berita-meta"><i class="bi bi-calendar3"></i> 16 Nov 2024</span>
+                                <h3>Pengajian Akbar CE 2024</h3>
+                                <p>Kegiatan pengajian mahasiswa dan mahasiswi Teknik Komputer di bulan November 2024.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Baris bawah: geser ke kiri tiap 3 detik (mulai dari ujung kanan) -->
+                    <div class="berita-track" data-dir="-1" data-delay="3000" data-start="end" tabindex="0" aria-label="Berita baris bawah">
+                        <article class="berita-card">
+                            <div class="berita-img">
+                                <img src="img/berita-temu-ramah.jpg" alt="Dokumentasi temu ramah dan pelepasan angkatan 2021" loading="lazy">
+                                <span class="berita-tag"><i class="bi bi-people"></i> Organisasi</span>
+                            </div>
+                            <div class="berita-body">
+                                <span class="berita-meta"><i class="bi bi-calendar3"></i> 4 Okt 2024</span>
+                                <h3>Temu Ramah dan Pelepasan Angkatan 2021</h3>
+                                <p>Pertemuan dosen, alumni, dan mahasiswa dalam pelepasan angkatan 2021.</p>
+                            </div>
+                        </article>
+                        <article class="berita-card">
+                            <div class="berita-img">
+                                <img src="img/berita-mtq.jpg" alt="Poster CE Bangga juara 1 MTQ Politeknik Negeri Medan 2025" loading="lazy">
+                                <span class="berita-tag"><i class="bi bi-trophy"></i> Prestasi</span>
+                            </div>
+                            <div class="berita-body">
+                                <span class="berita-meta"><i class="bi bi-calendar3"></i> 20 Mar 2025</span>
+                                <h3>Juara 1 MTQ Politeknik Negeri Medan 2025</h3>
+                                <p>Muhammad Rizky (4-D) meraih Juara 1 Musabaqah Tilawatil Qur’an tingkat kampus.</p>
+                            </div>
+                        </article>
+                        <article class="berita-card">
+                            <div class="berita-img">
+                                <img src="img/berita-badminton.jpg" alt="Poster CE Bangga juara 1 ganda putra badminton" loading="lazy">
+                                <span class="berita-tag"><i class="bi bi-trophy"></i> Prestasi</span>
+                            </div>
+                            <div class="berita-body">
+                                <span class="berita-meta"><i class="bi bi-calendar3"></i> 2025</span>
+                                <h3>Juara 1 Ganda Putra Formasu</h3>
+                                <p>Arya Baihaqqi meraih Juara 1 Ganda Putra pada Festival Olahraga Mahasiswa Sumatera Utara 2025.</p>
+                            </div>
+                        </article>
+                        <article class="berita-card">
+                            <div class="berita-img">
+                                <img src="img/berita-ketua-jurusan.jpg" alt="Poster ucapan selamat Ketua Jurusan Teknik Komputer dan Informatika" loading="lazy">
+                                <span class="berita-tag"><i class="bi bi-megaphone"></i> Pengumuman</span>
+                            </div>
+                            <div class="berita-body">
+                                <span class="berita-meta"><i class="bi bi-calendar3"></i> 7 Nov 2025</span>
+                                <h3>Ketua Jurusan Periode 2025–2029</h3>
+                                <p>Selamat kepada Zakaria Sembiring, S.T., M.Sc. sebagai Ketua Jurusan Teknik Komputer dan Informatika.</p>
+                            </div>
+                        </article>
+                        <article class="berita-card">
+                            <div class="berita-img">
+                                <img src="img/berita-voting.jpg" alt="Poster voting ketua dan wakil ketua HMPS CE 2026/2027" loading="lazy">
+                                <span class="berita-tag"><i class="bi bi-people"></i> Organisasi</span>
+                            </div>
+                            <div class="berita-body">
+                                <h3>Voting Ketua dan Wakil Ketua HMPS CE</h3>
+                                <p>Pemilihan pengurus HMPS CE periode 2026/2027, pukul 10.00–17.00 WIB.</p>
+                            </div>
+                        </article>
+                        <article class="berita-card">
+                            <div class="berita-img">
+                                <img src="img/berita-sidang-ta.jpg" alt="Dokumentasi sidang tugas akhir D3 Teknik Komputer" loading="lazy">
+                                <span class="berita-tag"><i class="bi bi-mortarboard"></i> Akademik</span>
+                            </div>
+                            <div class="berita-body">
+                                <span class="berita-meta"><i class="bi bi-calendar3"></i> Jul 2026</span>
+                                <h3>Sidang Tugas Akhir D3 Teknik Komputer</h3>
+                                <p>Dokumentasi sidang tugas akhir mahasiswa Program Studi D3 Teknik Komputer.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <button type="button" class="berita-btn" id="beritaNext" aria-label="Geser berita ke kanan"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8064A2" fill-opacity="1" d="M0,224L34.3,234.7C68.6,245,137,267,206,250.7C274.3,235,343,181,411,181.3C480,181,549,235,617,229.3C685.7,224,754,160,823,133.3C891.4,107,960,117,1029,128C1097.1,139,1166,149,1234,160C1302.9,171,1371,181,1406,186.7L1440,192L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+    <!-- akhir berita  -->
+
+    <!-- Kontak -->
+    <section class="kontak" id="kontak">
+        <div class="container-xl">
+            <div class="row text-center mb-3">
+                <h2>Kontak</h2>
+            </div>
+            <p class="kontak-sub text-center">Punya pertanyaan atau ingin berkolaborasi? Kirim pesan kepada kami.</p>
+
+            <div class="row g-4">
+                <!-- Informasi kontak -->
+                <div class="col-lg-5">
+                    <div class="kontak-info">
+                        <h3>Informasi Kontak</h3>
+                        <!-- GANTI alamat, email, dan tautan di bawah sesuai data resmi jurusan -->
+                        <ul class="kontak-list">
+                            <li class="kontak-item">
+                                <span class="kontak-icon"><i class="bi bi-geo-alt"></i></span>
+                                <div>
+                                    <strong>Alamat</strong>
+                                    <span>Jl. Almamater No. 1, Padang Bulan, Kec. Medan Baru, Kota Medan, Sumatera Utara 20155</span>
+                                </div>
+                            </li>
+                            <li class="kontak-item">
+                                <span class="kontak-icon"><i class="bi bi-envelope"></i></span>
+                                <div>
+                                    <strong>Email</strong>
+                                    <a href="mailto:jki@polmed.ac.id">jki@polmed.ac.id</a>
+                                </div>
+                            </li>
+                            <li class="kontak-item">
+                                <span class="kontak-icon"><i class="bi bi-globe"></i></span>
+                                <div>
+                                    <strong>Website</strong>
+                                    <a href="https://jki.polmed.ac.id" target="_blank" rel="noopener noreferrer">jki.polmed.ac.id</a>
+                                </div>
+                            </li>
+                            <li class="kontak-item">
+                                <span class="kontak-icon"><i class="bi bi-instagram"></i></span>
+                                <div>
+                                    <strong>Instagram HMPS CE</strong>
+                                    <a href="https://www.instagram.com/hmpsce_polmed/" target="_blank" rel="noopener noreferrer">@hmpsce_polmed</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Politeknik+Negeri+Medan" target="_blank" rel="noopener noreferrer" class="btn btn-akademik rounded-pill fw-semibold px-4">Buka di Google Maps <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Formulir -->
+                <div class="col-lg-7">
+                    <div class="kontak-form">
+                        <h3>Kirim Pesan</h3>
+
+                        <div class="alert alert-success alert-dismissible d-none my-alert alert-sukses" role="alert" aria-live="polite">
+                            <i class="bi bi-check-circle-fill me-2"></i><strong>Terima kasih!</strong> Pesan Anda sudah kami terima.
+                            <button type="button" class="btn-close alert-tutup" aria-label="Tutup"></button>
+                        </div>
+                        <div class="alert alert-danger alert-dismissible d-none my-alert alert-gagal" role="alert" aria-live="assertive">
+                            <i class="bi bi-exclamation-triangle-fill me-2"></i><strong>Maaf!</strong> Pesan belum terkirim. Periksa koneksi internet lalu coba lagi.
+                            <button type="button" class="btn-close alert-tutup" aria-label="Tutup"></button>
+                        </div>
+
+                        <form name="submit-to-google-sheet">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" placeholder="Nama Anda" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="nama@email.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="pesan" class="form-label">Pesan</label>
+                                    <textarea id="pesan" class="form-control" rows="5" name="pesan" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-tentang btn-kirim fw-semibold px-4">Kirim <i class="bi bi-send ms-1"></i></button>
+                                    <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                                        <span role="status">Loading...</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir kontak -->
+
+    <!-- footer -->
+    <svg class="wave-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8064a2" fill-opacity="1" d="M0,224L40,234.7C80,245,160,267,240,229.3C320,192,400,96,480,85.3C560,75,640,149,720,170.7C800,192,880,160,960,133.3C1040,107,1120,85,1200,96C1280,107,1360,149,1400,170.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    <footer class="footer text-white">
+        <div class="container-xl">
+            <div class="row g-4 footer-main justify-content-center align-items-start">
+                <!-- Kolom Identitas -->
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="footer-column">
+                        <div class="footer-brand">
+                            <img src="img/logo-polmed.png" alt="Logo Politeknik Negeri Medan" loading="lazy">
+                            <div>
+                                <strong>Teknik Komputer dan Informatika</strong>
+                                <span>Politeknik Negeri Medan</span>
+                            </div>
+                        </div>
+                        <p class="footer-desc">
+                            Membentuk talenta digital yang kompeten, inovatif,
+                            dan siap menghadapi tantangan industri 4.0.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Kolom Kontak -->
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="footer-column">
+                        <h3>Hubungi Kami</h3>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="bi bi-geo-alt"></i>
+                                <span>Jl. Almamater No. 1, Padang Bulan, Medan Baru, Medan</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-envelope"></i>
+                                <a href="mailto:jki@polmed.ac.id">jki@polmed.ac.id</a>
+                            </li>
+                        </ul>
+                        <div class="footer-social">
+                            <a href="https://jki.polmed.ac.id" target="_blank"rel="noopener noreferrer" aria-label="Website">
+                                <i class="bi bi-globe"></i>
+                            </a>
+                            <a href="https://www.instagram.com/hmpsce_polmed/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="mailto:jki@polmed.ac.id" aria-label="Email">
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Teknik Komputer | Politeknik Negeri Medan</p>
+            </div>
+        </div>
+    </footer>
+    <!-- akhir footer -->
+
+    <!-- Pencarian -->
+    <div class="modal fade" id="modalCari" tabindex="-1" aria-labelledby="judulCari" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content cari-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title visually-hidden" id="judulCari">Cari di halaman</h5>
+                    <div class="cari-field">
+                        <i class="bi bi-search"></i>
+                        <input type="search" id="cariInput" class="form-control" placeholder="Cari" autocomplete="off" aria-label="Kata kunci pencarian" aria-controls="cariHasil">
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cariHasil" class="cari-hasil" role="listbox" aria-live="polite"></div>
+                </div>
+                <div class="modal-footer cari-hint">
+                    <span><kbd>↑</kbd> <kbd>↓</kbd> pilih</span>
+                    <span><kbd>Enter</kbd> buka</span>
+                    <span><kbd>Esc</kbd> tutup</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"> </script>
+</body>
+</html>
