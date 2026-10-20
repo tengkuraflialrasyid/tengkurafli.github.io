@@ -1,196 +1,300 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portofolio | T. Rafli</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio | T. Rafli Al Rasyid</title>
+    <meta name="description" content="Portofolio T. Rafli Al Rasyid, mahasiswa Teknik Komputer Politeknik Negeri Medan. Internet of Things, jaringan, dan web.">
+    <meta name="theme-color" content="#e9f0ff">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230a1a3a'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%231456f0'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%23ffb81c'/%3E%3C/svg%3E">
 
-        <!-- css -->
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body id="home" data-bs-spy="scroll">
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm fixed-top">
-            <div class="container">
-              <a class="navbar-brand" href="#">T. Rafli</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <link rel="preload" href="css/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="css/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Sembunyikan elemen hero sampai GSAP siap. Jika skrip gagal, tampil lagi setelah 4 detik. -->
+    <script>
+        document.documentElement.classList.add('has-js');
+        setTimeout(function () { document.documentElement.classList.remove('has-js'); }, 4000);
+    </script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home">
+    <a class="skip-link" href="#about">Lewati ke konten</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top site-nav" id="siteNav" aria-label="Navigasi utama">
+        <div class="container">
+            <a class="navbar-brand" href="#home"><span class="brand-dot" aria-hidden="true"></span>T. Rafli</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Buka menu">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#sertificate">Sertificate</a>
-                    <a class="nav-link" href="#contact">Contact Me</a>
-                </div>
-              </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="#home" data-spy="home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-spy="about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificate" data-spy="certificate">Certificate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-spy="contact">Contact Me</a></li>
+                    <!-- Tautan "Project" dimatikan karena href-nya rusak ("P") dan belum ada bagian Project.-->
+                    <li class="nav-item"><a class="nav-link" href="Project/">Project</a></li>
+                </ul>
             </div>
-          </nav>
-        <!-- akhir navbar -->
+        </div>
+    </nav>
+    <!-- akhir navbar -->
 
-        <!-- jumbotron -->
-        <section class="jumbotron text-center">
-            <img src="img/foto_profil 2.png" alt="foto profil" width="200px"
-                class="rounded-circle img-thumbnail">
-            <h1 class="display-4">T. Rafli Al Rasyid</h1>
-            <p class="lead">Mahasiswa | Teknik Komputer</p>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,128L24,154.7C48,181,96,235,144,224C192,213,240,139,288,138.7C336,139,384,213,432,224C480,235,528,181,576,165.3C624,149,672,171,720,160C768,149,816,107,864,85.3C912,64,960,64,1008,69.3C1056,75,1104,85,1152,122.7C1200,160,1248,224,1296,218.7C1344,213,1392,139,1416,101.3L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
-        </section>
-        <!-- akhir jumbotron -->
+    <main>
+        <!-- hero -->
+        <header class="hero">
+            <div class="hero-main">
+                <div class="container">
+                    <div class="row align-items-center gy-5">
+                        <div class="col-lg-6 order-2 order-lg-1">
+                            <p class="hero-status" data-hero><span class="pulse" aria-hidden="true"></span>Mencari magang dan proyek Tugas Akhir</p>
+                            <h1 class="hero-name" aria-label="T. Rafli Al Rasyid">
+                                <span class="line" aria-hidden="true"><span class="line-inner" data-split>T. Rafli</span></span>
+                                <span class="line" aria-hidden="true"><span class="line-inner" data-split>Al Rasyid</span></span>
+                            </h1>
+                            <p class="hero-lead" data-hero>Mahasiswa Teknik Komputer di Politeknik Negeri Medan. Fokus pada Internet of Things, jaringan, dan web.</p>
+                            <div class="hero-actions" data-hero>
+                                <a class="btn btn-solid" href="#certificate">Lihat sertifikat</a>
+                                <a class="btn btn-line" href="#contact">Hubungi saya</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 order-1 order-lg-2">
+                            <div class="net" id="net">
+                                <svg class="net-svg" viewBox="0 0 520 520" aria-hidden="true" focusable="false">
+                                    <g class="net-ring">
+                                        <line x1="96"  y1="120" x2="256" y2="38"  data-a="iot" data-b="s1"/>
+                                        <line x1="256" y1="38"  x2="436" y2="96"  data-a="s1"  data-b="jar"/>
+                                        <line x1="436" y1="96"  x2="504" y2="250" data-a="jar" data-b="s2"/>
+                                        <line x1="504" y1="250" x2="446" y2="404" data-a="s2"  data-b="web"/>
+                                        <line x1="446" y1="404" x2="262" y2="490" data-a="web" data-b="s3"/>
+                                        <line x1="262" y1="490" x2="84"  y2="408" data-a="s3"  data-b="ai"  class="is-learning"/>
+                                        <line x1="84"  y1="408" x2="14"  y2="262" data-a="ai"  data-b="s4"  class="is-learning"/>
+                                        <line x1="14"  y1="262" x2="96"  y2="120" data-a="s4"  data-b="iot"/>
+                                    </g>
+                                    <g class="net-spokes">
+                                        <line x1="260" y1="260" x2="96"  y2="120" data-a="core" data-b="iot"/>
+                                        <line x1="260" y1="260" x2="436" y2="96"  data-a="core" data-b="jar"/>
+                                        <line x1="260" y1="260" x2="446" y2="404" data-a="core" data-b="web"/>
+                                        <line x1="260" y1="260" x2="84"  y2="408" data-a="core" data-b="ai" class="is-learning"/>
+                                    </g>
+                                    <g class="net-sats">
+                                        <circle cx="256" cy="38"  r="6"/>
+                                        <circle cx="504" cy="250" r="6"/>
+                                        <circle cx="262" cy="490" r="6"/>
+                                        <circle cx="14"  cy="262" r="6"/>
+                                    </g>
+                                    <g class="net-packets"></g>
+                                </svg>
+
+                                <div class="net-core">
+                                    <img class="net-avatar" src="img/foto_profil 2.png" alt="Foto T. Rafli Al Rasyid" width="433" height="433" fetchpriority="high">
+                                </div>
+
+                                <ul class="net-nodes" aria-label="Bidang">
+                                    <li class="node" style="--x:18.5%;--y:23.1%"><span class="chip" data-node="iot">IoT</span></li>
+                                    <li class="node" style="--x:83.8%;--y:18.5%"><span class="chip" data-node="jar">Jaringan</span></li>
+                                    <li class="node" style="--x:85.8%;--y:77.7%"><span class="chip" data-node="web">Web</span></li>
+                                    <li class="node" style="--x:16.2%;--y:78.5%"><span class="chip chip-learning" data-node="ai" title="Sedang dipelajari">AI</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg class="wave wave-white" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0,70 C160,18 340,14 520,52 C700,90 880,116 1060,78 C1240,40 1360,30 1440,46 L1440,120 L0,120 Z"/></svg>
+        </header>
+        <!-- akhir hero -->
 
         <!-- about -->
-        <section class="about" id="about">
-            <div class="container text-center">
-                <div class="row text-center mb-3">
-                    <div class="col">
-                        <h2>About Me</h2>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center fs-5 text-center">
-                    <div class="col-md-4">Saya mahasiswa semester 5 Politeknik Negeri Medan dengan prodi Teknik Komputer. Saya memiliki keahlian dibidang Internet of Things, jaringan dan web.
-                        saya sedang mempelajari hal baru seperti Artificial Intelligence, aplikasi berbasis website dan mobile.</div>
-                    <div class="col-md-4">Selain kuliah, saya juga aktif menambah kompetensi lewat pelatihan dan lomba bersertifikasi, seperti MikroTik MTCNA, Junior Administrator dan lomba IoT. 
-                        Saat ini saya sedang mencari kesempatan untuk belajar lebih banyak lewat proyek Tugas Akhir dan magang.</div>
-                </div>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,320L48,293.3C96,267,192,213,288,213.3C384,213,480,267,576,240C672,213,768,107,864,106.7C960,107,1056,213,1152,240C1248,267,1344,213,1392,186.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-        </section>
-         <!-- akhir about -->
-
-        <!-- sertificate -->
-        <section id="sertificate" class="sertificate">
+        <section class="section about" id="about">
             <div class="container">
-                <div class="row text-center mb-3">
-                    <div class="col">
-                        <h2>My Certificate</h2>
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4">
+                        <h2 class="sec-title"><span class="mask"><span>About Me</span></span></h2>
                     </div>
-                </div>
+                    <div class="col-lg-8">
+                        <p class="about-lead reveal-words">Saya mahasiswa semester 5 Politeknik Negeri Medan dengan prodi Teknik Komputer. Saya memiliki keahlian di bidang Internet of Things, jaringan, dan web. Saya sedang mempelajari hal baru seperti Artificial Intelligence, aplikasi berbasis website, dan mobile.</p>
+                        <p class="about-copy">Selain kuliah, saya juga aktif menambah kompetensi lewat pelatihan dan lomba bersertifikasi, seperti MikroTik MTCNA, Junior Administrator, dan lomba IoT. Saat ini saya sedang mencari kesempatan untuk belajar lebih banyak lewat proyek Tugas Akhir dan magang.</p>
 
-                <div class="row justify-content-center">
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <a href="https://drive.google.com/file/d/1_PDQ0m4yi_eD5GQvOrbC-A0KUMrzX5Ta/view?usp=sharing" target="_blank"><img src="img/iot.jpg" alt="sertifikat IoT" class="card-img-top" loading="lazy"></a>
-                            <div class="card-body">
-                                <h5 class="IoT">Internet of Things</h5>
-                                <p class="card-text">Mengikuti perlombaan berteme Internet of Things yang diselenggarakan Medan Coding Competitiom</p>
+                        <dl class="skills">
+                            <div class="skills-row">
+                                <dt>Keahlian</dt>
+                                <dd>
+                                    <ul class="chips">
+                                        <li>Internet of Things</li>
+                                        <li>Jaringan</li>
+                                        <li>Web</li>
+                                    </ul>
+                                </dd>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <a href="https://drive.google.com/file/d/1WTJJTWbtGncXbXlw_w92yButRt9lqG4G/view?usp=sharing" target="_blank"><img src="img/sertifikat mtcna.jpg" alt="sertifikat mtcna" class="card-img-top"></a>
-                            <div class="card-body">
-                                <h5 class="MTCNA">MTCNA</h5>
-                                <p class="card-text">Melakukan konfigurasi dasar Mikrotik berupa IP address, routing, firewall, DHCP dan wireless</p>
+                            <div class="skills-row">
+                                <dt>Sedang dipelajari</dt>
+                                <dd>
+                                    <ul class="chips chips-learning">
+                                        <li>Artificial Intelligence</li>
+                                        <li>Aplikasi website</li>
+                                        <li>Aplikasi mobile</li>
+                                    </ul>
+                                </dd>
                             </div>
-                        </div>
+                        </dl>
                     </div>
-
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <a href="https://drive.google.com/file/d/122FLk_JU74PtXz3qmLdHVysGq2bVSS7K/view?usp=sharing" target="_blank"><img src="img/vsga.jpg" alt="sertifikat JNA VSGA" class="card-img-top"></a>
-                            <div class="card-body">
-                                <h5 class="VSGA JNA">VSGA JNA</h5>
-                                <p class="card-text">pelatihan administrasi jaringan tingkat dasar, mencakup perancangan, instalasi, dan konfigurasi jaringan</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <a href="https://drive.google.com/file/d/1_5W1mtX8krvDobZkotjcnFeJKgme8c_E/view?usp=sharing" target="_blank"><img src="img/sertifikat jna_page-0001.jpg" alt="sertifikat JNA BNSP" class="card-img-top"></a>
-                            <div class="card-body">
-                                <h5 class="JNA BNSP">JNA BNSP</h5>
-                                <p class="card-text">Pengakuan resmi kompetensi di bidang administrasi jaringan dari Badan Nasional Sertifikasi Profesi.</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,128L24,154.7C48,181,96,235,144,224C192,213,240,139,288,138.7C336,139,384,213,432,224C480,235,528,181,576,165.3C624,149,672,171,720,160C768,149,816,107,864,85.3C912,64,960,64,1008,69.3C1056,75,1104,85,1152,122.7C1200,160,1248,224,1296,218.7C1344,213,1392,139,1416,101.3L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+            <svg class="wave wave-ice" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0,84 C200,112 380,104 560,70 C740,36 920,8 1100,36 C1260,62 1360,88 1440,80 L1440,120 L0,120 Z"/></svg>
         </section>
-        <!-- akhir sertificate -->
+        <!-- akhir about -->
 
-        <!-- contact-->
-        <section class="contact" id="contact">
+        <!-- certificate -->
+        <section class="section certs" id="certificate">
             <div class="container">
-                <div class="row text-center mb-3">
-                    <h2>Contact Me</h2>
+                <div class="sec-head">
+                    <h2 class="sec-title"><span class="mask"><span>My Certificate</span></span></h2>
+                    <p class="sec-sub">Pelatihan, sertifikasi, dan lomba yang pernah saya ikuti. Klik kartu untuk membuka sertifikatnya.</p>
                 </div>
 
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-                            <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <ul class="cert-list">
+                    <li class="cert">
+                        <article class="cert-card">
+                            <figure class="cert-fig">
+                                <img src="img/iot.jpg" alt="Sertifikat lomba Internet of Things" width="1655" height="1241" loading="lazy" decoding="async">
+                            </figure>
+                            <div class="cert-body">
+                                <h3 class="cert-title"><a class="stretched-link" href="https://drive.google.com/file/d/1_PDQ0m4yi_eD5GQvOrbC-A0KUMrzX5Ta/view?usp=sharing" target="_blank" rel="noopener noreferrer">Internet of Things<span class="visually-hidden"> (buka di tab baru)</span><svg class="ext" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg></a></h3>
+                                <p>Mengikuti perlombaan bertema Internet of Things yang diselenggarakan Medan Coding Competition.</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="cert">
+                        <article class="cert-card">
+                            <figure class="cert-fig">
+                                <img src="img/sertifikat mtcna.jpg" alt="Sertifikat MikroTik MTCNA" width="1241" height="931" loading="lazy" decoding="async">
+                            </figure>
+                            <div class="cert-body">
+                                <h3 class="cert-title"><a class="stretched-link" href="https://drive.google.com/file/d/1WTJJTWbtGncXbXlw_w92yButRt9lqG4G/view?usp=sharing" target="_blank" rel="noopener noreferrer">MTCNA<span class="visually-hidden"> (buka di tab baru)</span><svg class="ext" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg></a></h3>
+                                <p>Melakukan konfigurasi dasar MikroTik berupa IP address, routing, firewall, DHCP, dan wireless.</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="cert">
+                        <article class="cert-card">
+                            <figure class="cert-fig">
+                                <img src="img/vsga.jpg" alt="Sertifikat pelatihan VSGA Junior Network Administrator" width="1655" height="1241" loading="lazy" decoding="async">
+                            </figure>
+                            <div class="cert-body">
+                                <h3 class="cert-title"><a class="stretched-link" href="https://drive.google.com/file/d/122FLk_JU74PtXz3qmLdHVysGq2bVSS7K/view?usp=sharing" target="_blank" rel="noopener noreferrer">VSGA JNA<span class="visually-hidden"> (buka di tab baru)</span><svg class="ext" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg></a></h3>
+                                <p>Pelatihan administrasi jaringan tingkat dasar, mencakup perancangan, instalasi, dan konfigurasi jaringan.</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="cert">
+                        <article class="cert-card">
+                            <figure class="cert-fig">
+                                <img src="img/sertifikat jna_page-0001.jpg" alt="Sertifikat kompetensi JNA dari BNSP" width="1080" height="810" loading="lazy" decoding="async">
+                            </figure>
+                            <div class="cert-body">
+                                <h3 class="cert-title"><a class="stretched-link" href="https://drive.google.com/file/d/1_5W1mtX8krvDobZkotjcnFeJKgme8c_E/view?usp=sharing" target="_blank" rel="noopener noreferrer">JNA BNSP<span class="visually-hidden"> (buka di tab baru)</span><svg class="ext" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg></a></h3>
+                                <p>Pengakuan resmi kompetensi di bidang administrasi jaringan dari Badan Nasional Sertifikasi Profesi.</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="cert">
+                        <article class="cert-card">
+                            <figure class="cert-fig">
+                                <img src="img/peserta-AI.jpg" alt="Sertifikat peserta kegiatan HCC AI" width="1655" height="1241" loading="lazy" decoding="async">
+                            </figure>
+                            <div class="cert-body">
+                                <h3 class="cert-title"><a class="stretched-link" href="https://drive.google.com/file/d/1qYdmA4_0DUbA_VdqnRWqvaXyyi7ME8Sa/view?usp=sharing" target="_blank" rel="noopener noreferrer">Peserta HCC AI<span class="visually-hidden"> (buka di tab baru)</span><svg class="ext" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg></a></h3>
+                                <p>Mengikuti kegiatan dari HMPS CE untuk meningkatkan pengetahuan dan keterampilan di bidang AI.</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <svg class="wave wave-white" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0,70 C160,18 340,14 520,52 C700,90 880,116 1060,78 C1240,40 1360,30 1440,46 L1440,120 L0,120 Z"/></svg>
+        </section>
+        <!-- akhir certificate -->
+
+        <!-- contact -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="row g-4 g-lg-5 align-items-start">
+                    <div class="col-lg-5">
+                        <h2 class="sec-title"><span class="mask"><span>Contact Me</span></span></h2>
+                        <p class="contact-lead">Punya pertanyaan, tawaran magang, atau ingin membahas proyek? Kirim pesan lewat formulir ini, atau hubungi saya lewat Instagram.</p>
+                        <a class="btn btn-line contact-ig" href="https://instagram.com/t.rafli_" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+                            @t.rafli_
+                        </a>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="form-card">
+                            <div class="notice notice-ok my-alert" role="status" hidden>
+                                <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+                                <p><strong>Pesan terkirim.</strong> Terima kasih, pesan Anda sudah kami terima.</p>
+                                <button type="button" class="notice-close" aria-label="Tutup pemberitahuan">&times;</button>
+                            </div>
+                            <div class="notice notice-err" role="alert" hidden>
+                                <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>
+                                <p><strong>Pesan belum terkirim.</strong> Periksa koneksi internet, lalu kirim ulang.</p>
+                                <button type="button" class="notice-close" aria-label="Tutup pemberitahuan">&times;</button>
+                            </div>
+
+                            <form name="submit-to-google-sheet">
+                                <div class="field mb-3">
+                                    <label for="name" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="name" name="nama" autocomplete="name" placeholder="Nama Anda" required>
+                                </div>
+                                <div class="field mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" autocomplete="email" placeholder="nama@email.com" required>
+                                </div>
+                                <div class="field mb-4">
+                                    <label for="pesan" class="form-label">Pesan</label>
+                                    <textarea id="pesan" class="form-control" rows="4" name="pesan" placeholder="Tulis pesan Anda di sini" required></textarea>
+                                </div>
+
+                                <div class="field">
+                                    <button type="submit" class="btn btn-solid btn-kirim">Kirim pesan</button>
+                                    <button class="btn btn-solid btn-loading d-none" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+                                        <span role="status">Mengirim...</span>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
-                        
-                        <form name="submit-to-google-sheet">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nama Lengkap</label>
-                                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
-                            </div>
-    
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="pesan" class="form-label">Pesan</label>
-                                <textarea id="pesan" class="form-control" rows="3" name="pesan"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
-                            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-                                <span role="status">Loading...</span>
-                              </button>
-                        </form>
                     </div>
                 </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,288L34.3,261.3C68.6,235,137,181,206,165.3C274.3,149,343,171,411,154.7C480,139,549,85,617,90.7C685.7,96,754,160,823,170.7C891.4,181,960,139,1029,149.3C1097.1,160,1166,224,1234,229.3C1302.9,235,1371,181,1406,154.7L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            <svg class="wave wave-ink" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0,84 C200,112 380,104 560,70 C740,36 920,8 1100,36 C1260,62 1360,88 1440,80 L1440,120 L0,120 Z"/></svg>
         </section>
-        <!-- akhir kontak -->
+        <!-- akhir contact -->
+    </main>
 
-        <!-- footer -->
-        <footer class="bg-primary text-white text-center pb-2">
-            <p>&copy; 2026 T. Rafli Al Rasyid | 2405112060 </p>
-            <P><a href="https://instagram.com/t.rafli_" class="btn" style="background-color: #e2edff;">Follow Instagram!</a></P>
-        </footer>
-        <!-- akhir foooter -->
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 T. Rafli Al Rasyid | 2405112060</p>
+            <a href="https://instagram.com/t.rafli_" class="btn btn-ice" target="_blank" rel="noopener noreferrer">Follow Instagram</a>
+        </div>
+    </footer>
+    <!-- akhir footer -->
 
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwixfozdtreoQnVrDL4oboVVemzUkwoA-dY4ln1Inr8v-ZiXhRh6WItQPS0M2GTHuqU/exec';
-            const form = document.forms['submit-to-google-sheet'];
-            const btnKirim = document.querySelector('.btn-kirim');
-            const btnLoading = document.querySelector('.btn-loading');
-            const myAlert = document.querySelector('.my-alert');
-        
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                // ketika tombol submit diklik
-                //tampilkan tombol loading, hilangkan tombol kirim
-                btnLoading.classList.toggle('d-none');
-                btnKirim.classList.toggle('d-none');
-                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                    .then((response) => {
-                        btnLoading.classList.toggle('d-none');
-                        btnKirim.classList.toggle('d-none');
-                        myAlert.classList.toggle('d-none');
-
-                        form.reset();
-                        console.log('Success!', response);
-                    })
-                    .catch((error) => console.error('Error!', error.message));
-            });
-        </script>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    </body> 
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
